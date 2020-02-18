@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Image Manipulation</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+    <h1 id="h1normal"><strong>Image Manipulation</strong></h1>
+    <hr width=350px>
+    <h1 id="h1flip"><strong>Image Manipulation</strong></h1>
+    <div id="container">
+        <div id="beforeDiv" class="polaroid" style="width: 300px;">
+            <p class="uploadtext">Upload an image ...</p>
+            <img id="beforePic" src="images/pic1.jpg" style="display: none;">
+            <div class="text"><p>Before</p></div>
+        </div>
+        <div id="controls">
+            <button id="rotate" class="controale">Rotate 90deg</button>
+            <button id="flipH" class="controale">Flip Image Horizontally</button>
+            <button id="flipV" class="controale">Flip Image Vertically</button>
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="100" value="50" class="slider" "controale" id="myRange">
+                    <p id="slidervalue">Set Transparency: <span id="output"></span></p>
+                </div>
+            <button id="bw" class="controale">B&amp;W</button>
+            <button id="details" class="controale">Image Details</button>
+            <input type="file" id="file" accept="image/*">
+            <br>
+            <div id="controlsText"><p>Controls</p></div>
+        </div>
+        <div id="afterDiv" class="polaroid" style="width: 300px;">
+            <p class="uploadtext">Upload an image ...</p>
+            <img id="afterPic" src="images/pic1.jpg" style="display: none;">
+            <div class="text">
+                <p>After</p><br>
+                <p id="note"><strong>Note:</strong> the effects will not add</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <hr width=100% id="bottomline">
+        <div class="about" style="display:inline;">&copy; Radu Harangus 2020</div>
+        <div style="display:inline;"> | | </div>
+        <a href="about.html" id="about"><div class="about"> About</div></a>
+    </footer>
+
+    <script src="libraries/exif.js"></script>
+    <script src="javascript.js"></script>
+</body>
+</html>
